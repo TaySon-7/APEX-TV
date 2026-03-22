@@ -8,4 +8,5 @@ INSTALLED_APPS = [
     "rest_framework",
     "movie",
     "subscription",
+    "genre"
 ]
