@@ -22,4 +22,4 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("api/movie/", include("movie.urls")),
     path("api/subscription/", include("subscription.urls")),
-    path("api/watchlist", include("watchlist.urls")),
+    path("api/watchlist/", include("watchlist.urls")),]

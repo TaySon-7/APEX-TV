@@ -26,10 +26,27 @@ class User(AbstractUser):
         verbose_name = "Пользователь"
         verbose_name_plural = "Пользователи"
 
+    groups = models.ManyToManyField(
+        'auth.Group',
+        verbose_name='groups',
+        blank=True,
+        related_name='cinemausers_user_set',  # Уникальное имя
+        related_query_name='cinemauser',
+    )
+
+    user_permissions = models.ManyToManyField(
+        'auth.Permission',
+        verbose_name='user permissions',
+        blank=True,
+        related_name='cinemausers_user_set',  # Уникальное имя
+        related_query_name='cinemauser',
+    )
+
+
     def clean(self):
         super().clean()
 
-        if self.watchlist_id is None or self.pk is None:
+        if self.watchlist.user_id is None or self.pk is None:
             return
 
         if self.watchlist.user_id != self.pk:
