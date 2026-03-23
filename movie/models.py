@@ -1,7 +1,22 @@
 from django.db import models
 
-from genre.models import Genre
 from subscription.models import Subscription
+
+class Genre(models.Model):
+    """
+    модель жанра фильма
+    """
+    title = models.CharField(max_length=100, verbose_name='Название жанра', unique=True)
+    description = models.TextField(verbose_name='Описание')
+    slug = models.SlugField(unique=True, verbose_name='Slug')
+
+    class Meta:
+        ordering = ['title']
+        verbose_name = "жанр"
+        verbose_name_plural = "жанры"
+
+    def __str__(self):
+        return self.title
 
 
 class Movie(models.Model):
