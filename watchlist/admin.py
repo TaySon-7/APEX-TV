@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from watchlist.models import Watchlist
+from watchlist.domain.models import Watchlist
 
 
 @admin.register(Watchlist)

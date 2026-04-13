@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from watchlist.models import Watchlist
+from watchlist.domain.models import Watchlist
 
 
 class WatchlistSerializer(serializers.ModelSerializer):

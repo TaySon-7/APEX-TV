@@ -1,7 +1,7 @@
 from rest_framework import viewsets, filters
 from rest_framework.pagination import PageNumberPagination
-from .models import Subscription
-from .serializers import SubscriptionSerializer
+from subscription.domain.models import Subscription
+from subscription.api.serializers import SubscriptionSerializer
 
 
 # Create your views here.

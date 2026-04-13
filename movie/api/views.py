@@ -2,9 +2,9 @@ from django.http import HttpResponse
 from rest_framework import viewsets, filters
 from rest_framework.pagination import PageNumberPagination
 
-from movie.models import Genre
-from movie.models import Movie
-from movie.serializers import MovieSerializer, GenreSerializer
+from movie.domain.models import Genre
+from movie.domain.models import Movie
+from movie.api.serializers import MovieSerializer, GenreSerializer
 
 
 def index(request):

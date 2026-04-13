@@ -1,6 +1,6 @@
 from django.db import models
 
-from subscription.models import Subscription
+from subscription.domain.models import Subscription
 
 class Genre(models.Model):
     """
