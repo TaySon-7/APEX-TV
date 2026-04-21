@@ -67,7 +67,7 @@ class MovieServiceTest(TestCase):
 
         self.assertEqual(result.id, movie.id)
 
-    def test_ensure_movie_allowed_movie_not_found(self):
+    def test_ensure_movie_allowed_subscription_mismatch(self):
         data = self._movie_data()
         movie = movie_service.create_movie(validated_data=data)
 
