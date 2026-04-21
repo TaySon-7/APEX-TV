@@ -1,9 +1,9 @@
 asgiref==3.11.1
-Django==6.0.3
-django-stubs==5.2.9
-django-stubs-ext==5.2.9
-djangorestframework==3.16.1
-djangorestframework-stubs==3.16.8
+Django==6.0.4
+django-stubs==6.0.3
+django-stubs-ext==6.0.3
+djangorestframework==3.17.1
+djangorestframework-stubs==3.16.9
 psycopg2-binary==2.9.11
 python-dotenv==1.2.2
 split-settings==1.0.0
