@@ -2,6 +2,7 @@ from django.db import models
 
 from subscription.domain.models import Subscription
 
+
 class Genre(models.Model):
     """
     модель жанра фильма

@@ -10,6 +10,7 @@ class MovieAdmin(admin.ModelAdmin):
     search_fields = ('title', 'description', 'genre__title')
     list_per_page = 20
 
+
 @admin.register(Genre)
 class GenreAdmin(admin.ModelAdmin):
     list_display = ('title', 'description', 'slug')
